@@ -103,29 +103,29 @@ Python string methods allow developers to work with strings quickly and it does 
 
 Some common built-in methods for strings with examples
 
-greeting = "Welcome to Hashnode"
+greeting = "Welcome to   Opengenus"
 
 # capitalize(): To convert the first character of a string to uppercase.
-print(greeting.capitalize()) # Output: "Welcome to hashnode"
+print(greeting.capitalize()) # Output: "Welcome to   Opengenus"
 
 # casefold(): To convert a complete string into lowercase.
-print(greeting.casefold()) # Output: "welcome to hashnode"
+print(greeting.casefold()) # Output: "welcome to   Opengenus"
 
 # center(): To get a centered string.
-print(greeting.center(30)) # Output: "     Welcome to Hashnode     "
+print(greeting.center(30)) # Output: "     Welcome to   Opengenus     "
 
 # count(): To get the number of times a specified value occurs in a string.
 print(greeting.count("e")) # Output: 3
 
 # encode(): To get an encoded version of the string.
-print(greeting.encode()) # Output: b'Welcome to Hashnode'
+print(greeting.encode()) # Output: b'Welcome to   Opengenus'
 
 #endswith(): To get a true value if the string ends with the specified value.
-print(greeting.endswith("node")) # Output: True
+print(greeting.endswith("genus")) # Output: True
 
 #expandtabs(): 	To set the tab size of the string.
-greeting = "Welcome\tto\tHashnode"
-print(greeting.expandtabs(4)) # Output: "Welcome to  Hashnode"
+greeting = "Welcome\tto\t  Opengenus"
+print(greeting.expandtabs(4)) # Output: "Welcome to    Opengenus"
  
 #find(): To search the string for a specified value and to get its position.
 print(greeting.find("to")) # Output: 8
@@ -142,7 +142,7 @@ greeting = "Hello, my name is {name} and I am {age} years old"
 print(greeting.format_map(person)) # Output: "Hello, my name is Nithish and I am 25 years old"
 
 # index(): To search the string for a specified value and to get its position.
-greeting = "Welcome to Hashnode"
+greeting = "Welcome to   Opengenus"
 print(greeting.index("Welcome")) # Output: 8
 
 # isalnum(): To get a true value if all characters in the string are alphanumeric.
@@ -181,9 +181,9 @@ print(greeting.isupper()) # Output: True
 
 # join(): To join the elements of an iterable to the end of the string.
 separator = ', '
-fruits = ['Welcome', 'To', 'Hashnode']
+fruits = ['Welcome', 'To', '  Opengenus']
 result = separator.join(fruits)
-print(result)  #Output: 'Welcome, To, Hashnode'
+print(result)  #Output: 'Welcome, To,   Opengenus'
 
 # len(): To return the length of a string.
 length = len(greeting)
@@ -191,28 +191,28 @@ print(length)  #Output: 20
 
 # ljust(): To return a left justified version of the string. 
 result = greeting.ljust(30)
-print(result)  # Output: 'Welcome to Hashnode '
+print(result)  # Output: 'Welcome to   Opengenus '
 
 #lower(): To convert a string into lowercase.
 result = greeting.lower()
-print(result)  # Output: 'welcome to hashnode'
+print(result)  # Output: 'welcome to   Opengenus'
 
 # lstrip(): To return a left trim version of the string.  
-greeting = '    Welcome to Hashnode    '
+greeting = '    Welcome to   Opengenus    '
 result = greeting.lstrip()
-print(result)   # Output: 'Welcome to Hashnode '
+print(result)   # Output: 'Welcome to   Opengenus '
 
 # maketrans(): To return a translation table to be used in translations.
 table = greeting.maketrans('o', '0')
 result = greeting.translate(table)
-print(result)   # Output: 'Welc0me t0 Hashn0de'
+print(result)   # Output: 'Welc0me t0 0pengenus'
 
 # partition(): To return a tuple where the string is parsed into three parts.
 result = greeting.partition('to')
-print(result)  # Output: ('Welcome ', 'to', ' Hashnode')
+print(result)  # Output: ('Welcome ', 'to', '   Opengenus')
 
 # replace(): To return a string where a specified value is replaced with a specified value.
-result = greeting.replace('Hashnode', 'Python')
+result = greeting.replace('  Opengenus', 'Python')
 print(result)   # Output: 'Welcome to Python'
 
 # rfind(): To search the string for a specified value and to get its last position.
@@ -225,25 +225,25 @@ print(position)  # Output: 14
 
 # rpartition(): To return a tuple where the string is parsed into three parts.
 result = greeting.rpartition('to')
-print(result)   # Output: ('Welcome ', 'to', ' Hashnode')
+print(result)   # Output: ('Welcome ', 'to', '   Opengenus')
 
 # rsplit(): To split the string at the specified separator, and to get a list.
 result = greeting.rsplit(' ')
-print(result)   # Output: ['Welcome', 'to', 'Hashnode']
+print(result)   # Output: ['Welcome', 'to', '  Opengenus']
 
 # rstrip(): To return a right trim version of the string.
-greeting = '    Welcome to Hashnode    '
+greeting = '    Welcome to   Opengenus    '
 result = greeting.rstrip()
-print(result)    # Output: ' Welcome to Hashnode'
+print(result)    # Output: ' Welcome to   Opengenus'
  
 # strip(): To remove any whitespace from the beginning or the end of the string.
-greeting = '    Welcome to Hashnode    '
+greeting = '    Welcome to   Opengenus    '
 result = greeting.strip()
-print(result)   # Output: 'Welcome to Hashnode'
+print(result)   # Output: 'Welcome to   Opengenus'
 
 # split(): To split the string at the specified separator, and to get a list.
 result = greeting.split(' ')
-print(result)   # Output: ['Welcome', 'to', 'Hashnode']
+print(result)   # Output: ['Welcome', 'to', '  Opengenus']
 
 # splitlines() - split the string at line breaks and get a list
 lines = "Hello\nWorld\n"
@@ -254,17 +254,17 @@ print(greeting.startswith("Welcome"))  # Output: True
 print(greeting.startswith("Goodbye"))  # Output: False
 
 # swapcase() - swap lowercase to uppercase and vice versa
-print(greeting.swapcase())  # Output: wELCOME TO hASHNODE
+print(greeting.swapcase())  # Output: wELCOME TO   Opengenus
 
 # title() - convert the first character of each word to uppercase
-print(greeting.title())  # Output: Welcome To Hashnode
+print(greeting.title())  # Output: Welcome To   Opengenus
 
 # translate() - get a translated string
 table = greeting.maketrans("W", "w")
-print(greeting.translate(table))  # Output: welcome to Hashnode
+print(greeting.translate(table))  # Output: welcome to   Opengenus
 
 # upper() - convert a string into uppercase
-print(greeting.upper())  # Output: WELCOME TO HASHNODE
+print(greeting.upper())  # Output: WELCOME TO   Opengenus
 
 # zfill() - fill the string with a specified number of 0 values at the beginning
 number = "42"
